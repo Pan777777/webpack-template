@@ -104,3 +104,14 @@ section,
 
 // Modules:
 // example: @import "modules/my-module.scss";
+
+header {
+  position: absolute;
+width: 1440px;
+height: 70px;
+left: 0px;
+top: 150px;
+
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+};

@@ -1,0 +1,56 @@
+// Types
+.rectangles {
+    height:700px;
+    width:270px;
+    padding: 70px;
+    margin: 70px;
+};
+
+@mixin sz_clr($clr) {
+width: 70px;
+height: 70px;
+left: 150px;
+top: 145px;
+background: $clr;
+border-radius: 6px;
+margin:0px;
+display: inline-block;
+};
+
+.rectangles_rectangle_darkshade100 {
+@include sz_clr($darkshade100)
+}
+
+.rectangles_rectangle_darkshade75 {
+@include sz_clr($darkshade75)
+    }
+
+.rectangles_rectangle_darkshade50 {
+@include sz_clr($darkshade50)
+        }
+.rectangles_rectangle_darkshade25 {
+@include sz_clr($darkshade25)
+            }
+.rectangles_rectangle_darkshade5 {
+@include sz_clr($darkshade5)
+                };
+    
+.rectangles_rectangle_purple {
+@include sz_clr($purple)
+};
+
+.rectangles_rectangle_green {
+@include sz_clr($green)
+    };
+
+.rectangles_rectangle {
+    width: 270px;
+    height: 70px;
+    display: inline-block;
+    margin: 20px;
+};
+
+
+.rectangles_rectangle_text {
+    display: inline-block;
+}

@@ -1,4 +1,5 @@
 header
+    include ..
     .logo
         .logo_group 
             .logo_group_vector1
@@ -6,20 +7,23 @@ header
             .logo_group_vector1
         .logo_toxin
     .group2
-        .group2_Documentation 
-            a Documentation
-        .group2_News 
-            a News
-        .group2_Careers
-            a Careers
-        .group2_expand_more
-        .group2_Services
-            a Services
-        .group2_AboutUs
-            a About Us
-        .group2_Home
-            a Home
-        .group2_login
-            button login
-        .group2_register
-            button register
+        ul  
+            li.group2_Home
+                a Home
+            li.group2_AboutUs
+                a About Us
+            li.group2_Services
+                a Services
+            li.group2_expand_more
+            li.group2_Documentation
+                a Documentation
+            li.group2_Careers
+                a Careers
+            li.group2_News
+                a News
+            li.group2_login
+                button.group2_login_button 
+                    p.group2_login_button_p login
+            li.group2_register
+                button.group2_register_button 
+                    p.group2_register_button_p register

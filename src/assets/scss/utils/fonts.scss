@@ -4,6 +4,57 @@
 
 @import "mixins";
 
+@font-face {
+	font-family: 'Quicksand';
+	src: url('../fonts/Quicksand-Bold/Quicksand-Bold.eot');
+	src: local('☺'), url('../fonts/Quicksand-Bold/Quicksand-Bold.woff') format('woff'), url('../fonts/Quicksand-Bold/Quicksand-Bold.ttf') format('truetype'), url('../fonts/Quicksand-Bold/Quicksand-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('../fonts/Quicksand/Quicksand Book.eot');
+	src: local('☺'), url('../fonts/Quicksand/Quicksand Book.woff') format('woff'), url('../fonts/Quicksand/Quicksand Book.ttf') format('truetype'), url('../fonts/Quicksand/Quicksand Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot');
+	src: local('☺'), url('../fonts/OpenSans-Bold/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold/OpenSans-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Regular/OpenSans-Regular.eot');
+	src: local('☺'), url('../fonts/OpenSans-Regular/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Regular/OpenSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold/Montserrat-Bold.eot');
+	src: local('☺'), url('../fonts/Montserrat-Bold/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold/Montserrat-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/Montserrat-Regular/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
 /*
   Сhoose one of the ways:
     1. handle menthod,

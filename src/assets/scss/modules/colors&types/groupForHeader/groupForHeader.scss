@@ -1,63 +1,72 @@
-@mixin fontsHeads ($f, $w, $s, $lh, $c) {
+@mixin fontHeads($f, $w, $s, $lh, $c){
     font-family: $f;
     font-weight: $w;
     font-size: $s;
     line-height: $lh;
     color: $c;
+    display: inline-block;
 }
 
 .groupForHeader {
     position: absolute;
-    display: inline-block;
-    width: 403px;
+    display: table-cell;
+    width: 420;
     height: 321px;
     left: 846px;
     top: 145px;
     margin-bottom: 0px;
 };
 
-.groupForHeader_headers {
+.groupForHeader_h1{
+    display: table-cell;
+    padding-bottom: 80px;
+    width: 450px;
+    height: 70px;
+};
+.groupForHeader_h2{
+    display: table-cell;;
+    padding-bottom: 80px;
+};
+.groupForHeader_h3{
     display: inline-block;
-    height: 420px;
-    text-align: right;
-    
+    padding-bottom: 80px;
+};
+.groupForHeader_body{
+    display: inline-block;
+    padding-bottom: 80px;
 };
 
-.groupForHeader_text    {
-    display: inline-block;
-    height: 420px;
-    width: 320px;
+.groupForHeader_h1_headers {
+    @include fontHeads('Montserrat',normal, 24px, 29px, $darkshade25);
+    width: 50px;
+    height: 50px;
 };
-
-.groupForHeader_headers_h1 {
-    @include fontsHeads('Montserrat',normal, 24px, 29px, $darkshade25)
-};
-.groupForHeader_headers_h2 {
-    @include fontsHeads('Montserrat',normal, 19px, 23px, $darkshade25);
-    margin-top: 30px;
-};
-.groupForHeader_headers_h3 {
-    @include fontsHeads('Montserrat',normal, 12px, 15px, $darkshade25);
-    margin-top: 30px;
-};
-.groupForHeader_headers_body {
-    @include fontsHeads('Montserrat',normal, 14px, 24px, $darkshade25);
-    margin-top: 30px;
-};
-p.groupForHeader_text_h1  {
-    @include fontsHeads('Quicksand',bold, 24px, 30px, $darkshade100);
-    padding-left:20px;
-};
-p.groupForHeader_text_h2 {
-    @include fontsHeads('Quicksand',bold, 19px, 24px, $darkshade100);
-    padding-left:20px;
-};
-p.groupForHeader_text_h3  {
-    @include fontsHeads('Quicksand',bold, 12px, 15px, $darkshade100);
-    text-transform: uppercase;
-    padding-left:20px;
-};
-p.groupForHeader_text_body  {
-    @include fontsHeads('Montserrat',normal, 14px, 24px, $darkshade75);
-    padding-left:20px;
+.groupForHeader_h1_text {
+    @include fontHeads('Quicksand',bold, 24px, 30px, $darkshade100);
+    vertical-align: baseline;
 }
+
+.groupForHeader_h2_headers {
+    @include fontHeads('Montserrat',normal, 19px, 23px, $darkshade25);
+};
+.groupForHeader_h2_text {
+    @include fontHeads('Quicksand',bold, 19px, 24px, $darkshade100);
+};
+
+.groupForHeader_h3_headers {
+    @include fontHeads('Montserrat',normal, 12px, 15px, $darkshade25);
+    text-transform: uppercase;
+};
+.groupForHeader_h3_text {
+    @include fontHeads('Montserrat',bold, 12px, 15px, $darkshade100);
+    text-transform: uppercase;
+};
+
+.groupForHeader_body_headers {
+    @include fontHeads('Montserrat',normal, 14px, 24px, $darkshade25);
+    text-transform: uppercase;
+};
+.groupForHeader_h3_text {
+    @include fontHeads('Montserrat',bold, 14px, 24px, $darkshade75);
+    text-transform: uppercase;
+};

@@ -1,16 +1,21 @@
 // Types
+.content_rectangles {
+    margin: 145px 150px;
+    display: flex;
+
+};
+
+
 .rectangles {
     height:700px;
     width:270px;
-    padding: 70px;
-    margin: 70px;
+    display: flex;
+    flex-direction: column;
 };
 
 @mixin sz_clr($clr) {
 width: 70px;
 height: 70px;
-left: 150px;
-top: 145px;
 background: $clr;
 border-radius: 6px;
 margin:0px;
@@ -46,11 +51,16 @@ display: inline-block;
 .rectangles_rectangle {
     width: 270px;
     height: 70px;
-    display: inline-block;
-    margin: 20px;
+    display: flex;
+    margin-bottom: 20px;
 };
 
 
 .rectangles_rectangle_text {
-    display: inline-block;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+};
+
+

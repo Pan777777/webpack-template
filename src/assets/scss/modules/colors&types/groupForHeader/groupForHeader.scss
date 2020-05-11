@@ -18,10 +18,10 @@
 };
 
 .groupForHeader_h1{
-    display: table-cell;
+    display: inline-block;
+    align-items: center;
     padding-bottom: 80px;
-    width: 450px;
-    height: 70px;
+    border: 1px solid #000;
 };
 .groupForHeader_h2{
     display: table-cell;;
@@ -38,12 +38,14 @@
 
 .groupForHeader_h1_headers {
     @include fontHeads('Montserrat',normal, 24px, 29px, $darkshade25);
+    display: inline-block;
     width: 50px;
     height: 50px;
 };
 .groupForHeader_h1_text {
     @include fontHeads('Quicksand',bold, 24px, 30px, $darkshade100);
     vertical-align: baseline;
+    display: inline-block;
 }
 
 .groupForHeader_h2_headers {
@@ -66,7 +68,7 @@
     @include fontHeads('Montserrat',normal, 14px, 24px, $darkshade25);
     text-transform: uppercase;
 };
-.groupForHeader_h3_text {
-    @include fontHeads('Montserrat',bold, 14px, 24px, $darkshade75);
-    text-transform: uppercase;
+.groupForHeader_body_text {
+    @include fontHeads('Montserrat',normal, 14px, 24px, $darkshade75);
+    
 };

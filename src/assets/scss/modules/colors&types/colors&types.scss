@@ -1,7 +1,9 @@
 .content_colorsAndTypes {
-    margin: 145px 150px;
+    padding-left:150px;
+    padding-top: 145px;
     display: flex;
-    justify-content:flex-end;
+    justify-content: space-between;
+    max-width: 1100px;
 };
 
 // Colors
@@ -15,3 +17,4 @@ $green: #6FCF97;
 
 @import "rectangles/rectangles.scss";
 @import "groupForHeader/groupForHeader.scss";
+@import "groupLogo/groupLogo.scss";

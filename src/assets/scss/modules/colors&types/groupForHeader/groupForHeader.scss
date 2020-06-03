@@ -4,68 +4,83 @@
     font-size: $s;
     line-height: $lh;
     color: $c;
-    display: inline-block;
+    display: inline-flex;
+    
 }
 
 .groupForHeader {
     display: flex;
-    width: 403px;
+    width: 405px;
     height: 321px;
+    padding-left: 15px;
     
 };
 
-.groupForHeader_h1{
+.content_groupForHeader {
     display: flex;
-    align-items: center;
-    padding-bottom: 80px;
-    border: 1px solid #000;
 };
-.groupForHeader_h2{
-    display: table-cell;;
-    padding-bottom: 80px;
-};
-.groupForHeader_h3{
-    display: inline-block;
-    padding-bottom: 80px;
-};
-.groupForHeader_body{
-    display: inline-block;
-    padding-bottom: 80px;
+.content_groupForHeader_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 };
 
-.groupForHeader_h1_headers {
-    @include fontHeads('Montserrat',normal, 24px, 29px, $darkshade25);
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+.groupForHeader_text_h1,.groupForHeader_text_h2,
+.groupForHeader_text_h3,.groupForHeader_text_body {
+    display: flex;
 };
-.groupForHeader_h1_text {
+
+.groupForHeader_text_h1_p {
     @include fontHeads('Quicksand',bold, 24px, 30px, $darkshade100);
-    vertical-align: baseline;
-    display: inline-block;
-}
-
-.groupForHeader_h2_headers {
-    @include fontHeads('Montserrat',normal, 19px, 23px, $darkshade25);
+    display: flex;
+    padding-left: 10px;
 };
-.groupForHeader_h2_text {
+
+.groupForHeader_text_h1_p:before {
+    content: "H1";
+    @include fontHeads('Montserrat',normal, 24px, 29px, $darkshade25);
+    width:40px;
+    height:40px;
+    position: relative;
+    right: 30px;
+};
+
+.groupForHeader_text_h2_p {
     @include fontHeads('Quicksand',bold, 19px, 24px, $darkshade100);
+    padding-left: 10px;
+};
+.groupForHeader_text_h2_p:before {
+    content: "H2";
+    @include fontHeads('Montserrat',normal, 19px, 23px, $darkshade25);
+    height:40px;
+    display: inline-flex;
+    text-align: right;
+    position: relative;
+    right: 30px;
 };
 
-.groupForHeader_h3_headers {
-    @include fontHeads('Montserrat',normal, 12px, 15px, $darkshade25);
-    text-transform: uppercase;
-};
-.groupForHeader_h3_text {
+.groupForHeader_text_h3_p {
     @include fontHeads('Montserrat',bold, 12px, 15px, $darkshade100);
     text-transform: uppercase;
 };
-
-.groupForHeader_body_headers {
-    @include fontHeads('Montserrat',normal, 14px, 24px, $darkshade25);
+.groupForHeader_text_h3_p:before {
+    content:"H3";
+    @include fontHeads('Montserrat',normal, 12px, 15px, $darkshade25);
     text-transform: uppercase;
+    width:40px;
+    height:40px;
+    position: relative;
+    right: 15px;
 };
-.groupForHeader_body_text {
+
+.groupForHeader_text_body_p {
     @include fontHeads('Montserrat',normal, 14px, 24px, $darkshade75);
-    
 };
+.groupForHeader_text_body_p:before {
+    content:"body";
+    @include fontHeads('Montserrat',normal, 14px, 24px, $darkshade25);
+    width:40px;
+    height:40px;
+    position: relative;
+    right: 30px;
+}

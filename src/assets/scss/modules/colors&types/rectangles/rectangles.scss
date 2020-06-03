@@ -7,10 +7,11 @@
 
 
 .rectangles {
-    height:700px;
-    width:270px;
+    min-height:610px;
+    min-width:270px;
     display: flex;
     flex-direction: column;
+    
 };
 
 @mixin sz_clr($clr) {

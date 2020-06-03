@@ -10,10 +10,9 @@
 
 .groupForHeader {
     display: flex;
-    width: 405px;
+    max-width: 403px;
     height: 321px;
-    padding-left: 15px;
-    
+    margin-right:15px;
 };
 
 .content_groupForHeader {
@@ -48,6 +47,7 @@
 .groupForHeader_text_h2_p {
     @include fontHeads('Quicksand',bold, 19px, 24px, $darkshade100);
     padding-left: 10px;
+    padding-right: 20px;
 };
 .groupForHeader_text_h2_p:before {
     content: "H2";
@@ -75,6 +75,7 @@
 
 .groupForHeader_text_body_p {
     @include fontHeads('Montserrat',normal, 14px, 24px, $darkshade75);
+    padding-right: 60px;
 };
 .groupForHeader_text_body_p:before {
     content:"body";

@@ -4,6 +4,7 @@
 @import "utils/fonts";
 @import "utils/reset";
 @import "modules/colors&types/colors&types.scss";
+@import "modules/headers&footers/standardNavBar.scss";
 
 html {
   line-height: $mainLineHeight;
@@ -105,4 +106,3 @@ section,
 // Modules:
 // example: @import "modules/my-module.scss";
 
-@import "modules/header";

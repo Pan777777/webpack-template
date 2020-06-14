@@ -4,7 +4,8 @@
 @import "utils/fonts";
 @import "utils/reset";
 @import "modules/colors&types/colors&types.scss";
-@import "modules/headers&footers/standardNavBar.scss";
+@import "modules/headers&footers/headersAndFooters.scss";
+@import "modules/logo/logoAndToxin.scss";
 
 html {
   line-height: $mainLineHeight;

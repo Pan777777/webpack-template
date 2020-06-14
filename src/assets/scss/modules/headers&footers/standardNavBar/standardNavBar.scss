@@ -1,0 +1,20 @@
+.content_standardNavBar,
+.standardNavBar_button_login,
+.standardNavBar_logo,
+.standardNavBar_menu,
+.standardNavBar_button_register,
+.standardNavBar_menu_content
+ {
+    display: flex;
+};
+
+.content_standardNavBar {
+
+    align-items: center;
+    margin: 0 auto;
+    align-items: center;
+    };
+
+.standardNavBar_menu_content    {
+    justify-content: space-between;
+};
